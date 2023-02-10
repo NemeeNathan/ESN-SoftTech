@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.responsive {
+    width: 100%;
+    height: auto;
+  }
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+  }
+  body{
+    width: 100%;
+    height: auto;
+    background: #EEECEB;
+  }
+  .Navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #5265c4;
+    border-radius: 8px;
+  }
+  
+  .Navbar > .nav-logo {
+    font-weight: 700;
+    margin: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20pt;
+    font-family:'Times New Roman', Times, serif;
+  }
+  .Navbar > .nav-logo >span {
+    font-weight: 700;
+    color: #4b0909;
+    text-decoration: none;
+    font-size: 20pt;
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  .Navbar > .nav-items > a {
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 15px;
+    position: relative;
+    opacity: 0.9;
+    font-size: 16pt;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .Navbar > .nav-items > a:hover {
+    opacity: 1;
+  }
+  
+  .Navbar > .nav-items > a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: all 0.45s;
+  }
+  
+  .Navbar > .nav-items > a:hover::before {
+    width: 100%;
+  }
+  
+  .Navbar > .nav-toggle {
+    display: none;
+  }
+  
+  @media (max-width: 700px) {
+    .Navbar > .nav-items {
+      position: absolute;
+      top: 60px;
+      display: flex;
+      flex-direction: column;
+      background: #3b4da7;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: translateX(-100%);
+      transition: all .45s;
+    }
+  
+    .Navbar > .nav-items > a::before {
+        background: transparent;
+    }
+  
+    .Navbar > .nav-items.open {
+        transform: translateX(0);
+    }
+  
+    .Navbar > .nav-toggle {
+      display: flex;
+      width: 50px;
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  
+    .nav-toggle > .bar {
+      position: relative;
+      width: 32px;
+      height: 2px;
+      background: #ffffff;
+      transition: all 0.45s ease-in-out;
+    }
+  
+    .nav-toggle > .bar::before,
+    .nav-toggle > .bar::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      background: #ffffff;
+      border-radius: 2px;
+      transition: all 0.45s ease-in-out;
+    }
+  
+    .nav-toggle > .bar::before {
+      width: 25px;
+      transform: translateY(-8px);
+      right: 0;
+    }
+  
+    .nav-toggle > .bar::after {
+      width: 32px;
+      transform: translateY(8px);
+    }
+  
+    .nav-toggle.open > .bar {
+        transform: translateX(-40px);
+        background: transparent;
+    }
+  
+    .nav-toggle.open > .bar::before {
+        width: 32px;
+        transform: rotate(45deg) translate(26px, -26px);
+    }
+  
+    .nav-toggle.open > .bar::after {
+      transform: rotate(-45deg) translate(26px, 26px);
+    }
+  }
+/* Float four columns side by side */
+.column-n {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row-n {margin: 0 5px;}
+
+/* Clear floats after the columns */
+.row-n:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column-n {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card-n {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #003b56;
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 10px 5px;
+  place-content: center;
+  border-radius: 10px;
+  transition: all 500ms ease-in-out;
+}
+.card-n h3{
+  font-size: 14pt;
+  font-family: 'Courier New', Courier, monospace;
+}
+.card-n:hover{
+  background-color:darkslateblue;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  .button1:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+  }
+  .button2:hover {
+    background-color: #f44336;
+    color: white;
+  }
+
+  .footer{
+    padding:40px 0;
+    font-weight: 400;
+    background-color: rgb(2, 10, 70);
+    color: #fff;
+  }
+  
+   .footer .social{
+    text-align:center;
+    padding-bottom: 25px;
+   }
+  .footer .social a i{
+    width: 100%;
+    padding:5px;
+    transition: all .2s linear;
+    display:inline-block;
+    text-align: center;
+    opacity: 0.6;
+  }
+  
+  .footer .social a i:hover{
+    transform: translateY(-20%);
+    opacity: 1;
+  }
+  
+  .footer .text{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16pt;
+    margin-top: 17px;
+    opacity: 0.8;
+    border-top: .1rem solid rgba(255, 255, 255, .2);
+  }
+  .footer .copyright{
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11pt;
+    color:#aaa;
+    padding-top: 15px;
+    border-top: .1rem solid rgba(255, 255, 255, .2);
+  }
+  @media screen and (max-width: 600px) {
+    .foo {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  /* Popup content */
+  .popup{
+    background-color:#ffffff;
+    width:450px;
+    padding: 30px 40px;
+    position:absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top:50%;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    display: none;
+  }
+  .popup button{
+    display: block;
+    margin: 0 0 5px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #c5c5c5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .popup p{
+    font-size: 20px;
+    text-align: justify;
+    margin: 20px 0;
+  }
+  .popup a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    background-color: #0f72e5;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+  }

@@ -1,0 +1,36 @@
+{/* <h1 style={{textAlign: "center",color: "brown",fontFamily:"serif",fontsize: "17pt"}}>We Build a Project</h1> */}
+
+  // <div className="row-n">
+      {/* <div className="column-n">
+        <div className="card-n">
+          {/* <img src="https://media.istockphoto.com/id/1205501345/photo/young-teenage-girl-using-atm-machine-and-smart-phone.jpg?s=612x612&w=0&k=20&c=2F36i_qhGAdi_DOMRv6Vr7AroCktYd_lt3u-bzBpxMo=" width="25%" height="25%" alt=""> */}
+          {/* <h3 style={{fontsize:"20px",letterspacing:"2px",fontfamily:"serif"}}>Cardless Cash Withdrawal</h3>&nbsp;
+          <p style={{fontsize:"15px",fontfamily:"serif",fontweight: "300"}}>Its features include electronic funds transfer for retail purchases, automatic teller machines (ATMs), and automatic payroll deposits and bill payments. 
+              Some banks offer home banking, whereby a person with a personal computer can make transactions, either via a direct connection or by accessing a Web site. Electronic banking has 
+              vastly reduced the physical transfer of paper money and coinage from one place to another or even from one person to another.</p><br/>
+              <a href="ESNCareerStart">
+          <button  className="button button1" style={{fontFamily:"-moz-initial"}}>
+            View
+            </button>
+          </a>
+        </div>
+      </div>  */} 
+
+      {/* <div className="column-n">
+        <div className="card-n">
+          {/* <img src="https://media.istockphoto.com/id/1205501345/photo/young-teenage-girl-using-atm-machine-and-smart-phone.jpg?s=612x612&w=0&k=20&c=2F36i_qhGAdi_DOMRv6Vr7AroCktYd_lt3u-bzBpxMo=" width="25%" height="25%" alt=""> */}
+          {/* <h3 style={{fontsize:"20px",letterspacing:"2px",fontfamily:"serif"}}>Online College Management System</h3>&nbsp;
+          <p style={{fontsize:"15px",fontfamily:"serif",fontweight: "300"}}>
+          A college management system is a cloud based educational ERP software that enables HEIs to manage online admission & fees, students’ attendance, library books, etc. It can also generate students’ performance reports & simplify the hassles of faculty.
+
+  MasterSoft College Management System is an end-to-end solution for colleges to improve operational efficiency & institutional outcomes by automating Student-Faculty lifecycle & campus administration. This college ERP software is designed keeping in mind the different operations of a college.
+
+  MasterSoft's College ERP has 25+ pro modules and 30+ inbuilt modules. It helps educators to streamline all the core activities with biometrics, BI tools, and an analytics dashboard that generates precise reports on college admission, scholarship, compliance management, etc.
+            </p><br/>
+              <a href="ESNCareerStart">
+          <button  className="button button1" style={{fontFamily:"-moz-initial"}}>
+            View
+            </button>
+          </a>
+        </div>
+      </div>  */}
